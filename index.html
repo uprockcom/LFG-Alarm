@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LFG Alarm</title>
 
-    <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" color="#1b1b3a" href="safari-pinned-tab.svg">
-    <meta name="msapplication-TileColor" content="#1b1b3a">
-    <meta name="theme-color" content="#1b1b3a">
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LFG Alarm - The crypto alarm clock app for degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise.</title>
 
     <!-- SEO Meta Tags-->
-    <meta name="description" content="It's time for LFG Alarm! Coming Soon."/>
-    <meta name="keywords" content="LFG Alarm">
+    <meta name="description" content="LFG Alarm - The crypto alarm clock app for Degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise."/>
+    <meta name="keywords" content="LFG Alarm, crypto, notifications, alerts, alarm clock app, nft, nft mint calender, price alerts, twitter alerts, airdrops, android, ios, app">
     <meta name="robots" content="index, follow">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@LFGalarm">
-    <meta name="twitter:creator" content="@LFGalarm">
-    <meta name="twitter:title" content="LFG Alarm">
-    <meta name="twitter:description" content="It's time for LFG Alarm! Coming Soon.">
-    <meta name="twitter:image" content="https://lfgalarm.com/images/site-img.png">
+    <meta name="twitter:site" content="@lfgalarm">
+    <meta name="twitter:creator" content="@lfgalarm">
+    <meta name="twitter:title" content="LFG Alarm! | LFG Alarm - The crypto alarm clock app for Degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise.">
+    <meta name="twitter:description" content="LFG Alarm - The crypto alarm clock app for Degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise.">
+    <meta name="twitter:image" content="https://lfgalarm.com/images/header-bg.png">
     <meta name="twitter:image:width" content="1200">
     <meta name="twitter:image:height" content="630">
-    <meta name="twitter:image:alt" content="LFG Alarm">
+    <meta name="twitter:image:alt" content="LFG Alarm Clock App for crypto events you cannot afford to miss.">
 
     <!-- Open Graph general -->
     <meta content="LFG Alarm" property="og:site_name">
     <meta content="website" property="og:type">
     <meta content="https://lfgalarm.com" property="og:url">
-    <meta content="lfgalarm" property="og:title">
-    <meta content="It's time for LFG Alarm! Coming Soon." property="og:description">
-    <meta content="https://lfgalarm.com/images/site-img.png" property="og:image">
+    <meta content="LFG Alarm! | LFG Alarm - The crypto alarm clock app for Degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise." property="og:title">
+    <meta content="LFG Alarm - The crypto alarm clock app for Degens. Create epic alarms for crypto events you cannot afford to miss. Your LFG bat signal through the noise." property="og:description">
+    <meta content="https://lfgalarm.com/images/header-bg.png" property="og:image">
     <meta content="1200" property="og:image:width">
     <meta content="630" property="og:image:height">
 
-    <link rel="stylesheet" media="screen" href="css/theme.css">
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Slick Carousel -->
+	<link href="plugins/slick/slick.css" rel="stylesheet">
+	<!-- Slick Carousel Theme -->
+	<link href="plugins/slick/slick-theme.css" rel="stylesheet">
 
+	<!-- CUSTOM CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+	<!-- FAVICON -->
+	<link href="favicon.ico" rel="shortcut icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c60b54">
+	<meta name="msapplication-TileColor" content="#c60b54">
+	<meta name="theme-color" content="#1b1b3a">
 </head>
 
-<body>
-
+<body class="body-wrapper">
+        <nav class="navbar main-nav fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href=""><img src="images/logo.png" alt="logo"></a>
+            </div>
+        </nav>
 	<section class="hero">
 		<div class="bg-image" style="background-image: url(images/header-bg.png);"></div>
 		<img id="logo" src="images/logo.png" alt="LFG Alarm Logo"/>
@@ -54,10 +71,57 @@
         <p>A creator tool built by the <a href="https://uprock.com">UpRock Crew</a></p>
 	</section>
 
-
-	<footer>
-		<p>Copyright &copy; LFG Alarm 2022</p>
+	<footer class="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 mr-auto">
+					<div class="footer-logo">
+						<img src="images/logo.png" alt="footer-logo">
+					</div>
+					<div class="copyright">
+					<p>© Copyright 2023 LFG Alarm. All Rights Reserved.<br/>Created by: <a href="https://uprock.com/" target="_blank">UpRock Team</a>
+					</p>
+					</div>
+				</div>
+				<div class="col-lg-6 text-lg-right">
+					<!-- Social Icons -->
+					<ul class="social-icons list-inline">
+						<li class="list-inline-item">
+							<a href="https://twitter.com/lfgalarm" title="LFG Alarm Twitter"><i class="fa-brands fa-twitter"></i></a>
+						</li>
+						<!-- <li class="list-inline-item">
+							<a href="https://www.reddit.com/r/LFGAlarm" title="LFG Alarm Reddit"><i class="fa-brands fa-reddit"></i></a>
+						</li> -->
+						<li class="list-inline-item">
+							<a href="https://discord.gg/C7zRUtkQ3N" title="Official UpRock Server for LFG Alarm"><i class="fa-brands fa-discord"></i></a>
+						</li>
+						</ul>
+						<!-- Footer Links -->
+						<ul class="footer-links list-inline">
+						</li>
+						<li class="list-inline-item">
+							<a href="terms-of-use.html">TERMS</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="privacy-policy.html">PRIVACY POLICY</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="mailto:contact@lfgalarm.com" subject="LFG&nbsp;Alarm&nbsp;Feedback" title="Email LFG Alarm Team">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</footer>
+
+	<!-- JAVASCRIPTS -->
+
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/bootstrap/js/popper.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://kit.fontawesome.com/afec55624d.js" crossorigin="anonymous"></script>
 
 </body>
 

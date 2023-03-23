@@ -12,6 +12,7 @@ html {
 body {
 	font-family: var(--body-font-family);
 	-webkit-font-smoothing: antialiased;
+	background-color: #090927;
 }
   
 :root {
@@ -96,7 +97,9 @@ section p {
 	padding: 0 20px;
 	font-size: 20px;
 }
-
+.hero p {
+	color:white;
+}
 
 #logo {
 	width:100%;
@@ -137,48 +140,6 @@ section p {
 
 }
 
-/*-------------
- 	Footer
--------------*/
-
-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	background-color: #2F0D3C;
-	padding: 60px 0;
-}
-
-footer ul {
-	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
-}
-
-footer ul li {
-	margin: 0 8px;	
-}
-
-footer ul li:first-child {
-	margin-left: 0;	
-}
-
-footer ul li:last-child{
-	margin-right: 0;	
-}
-
-footer p {
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(255,255,255,0.6);
-	margin-bottom: 10px;
-}
-
-footer p a {
-	color: #fff;
-}
 
 @media (max-width: 700px){
  
