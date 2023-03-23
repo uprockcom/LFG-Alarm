@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<!-- SITE TITTLE -->
@@ -44,7 +45,7 @@
 
 	<!-- CUSTOM CSS -->
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/theme.css" rel="stylesheet">
+
 	<!-- FAVICON -->
 	<link href="favicon.ico" rel="shortcut icon">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -57,19 +58,392 @@
 </head>
 
 <body class="body-wrapper">
-        <nav class="navbar main-nav fixed-top navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href=""><img src="images/logo.png" alt="logo"></a>
-            </div>
-        </nav>
-	<section class="hero">
-		<div class="bg-image" style="background-image: url(images/header-bg.png);"></div>
-		<img id="logo" src="images/logo.png" alt="LFG Alarm Logo"/>
-		<br/>
-		<p>A mobile app inspired by AI, created by hoomans.</br>Follow us on <a href="https://twitter.com/lfgalarm" title="LFG Alarm Twitter">Twitter</a> to sign up for beta.</p>
-        <h2>Coming Soon...</h2>
-        <p>A creator tool built by the <a href="https://uprock.com">UpRock Crew</a></p>
+
+<nav class="navbar main-nav fixed-top navbar-expand-lg">
+	<div class="container">
+		<a class="navbar-brand" href=""><img src="images/logo.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span style="color:white"><i class="fa-solid fa-bars"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link scrollTo" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link scrollTo" href="#why">Why</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link scrollTo" href="#features">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link scrollTo" href="#signup">Contact</a>
+			</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	<!--=====================================
+	=            Homepage Banner            =
+	======================================-->
+
+	<section class="banner bg-1" id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 align-self-center">
+					<!-- Contents -->
+					<div class="content-block">
+						<h1 class="text-gradient-pink-blue">LFG Alarm</h1>
+						<h2 class="text-gradient-green">The crypto alarm clock app for degens. Wake up to real time crypto events that you cannot afford to miss. <u>Use sparingly.</u></h2>
+						<div class="d-md-none d-lg-block">
+							<h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter (ie price changes, tweets, NFT mints) <br/><br/><strong>Customize with memes and sounds as wild as crypto</strong><br/><br/>💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong></h3>
+							<br>
+							<div class="bitsignal-notice">
+								<h4 class="pink">BREAKING:<br>BTC to hit $1mm in 90 days?!<br><br><i class="fa-solid fa-arrow-down fa"></i> Subscribe to the BitSignal LFG Alarm! </h4>
+							</div>
+							<script src="js/price-test.js"></script>
+							<!-- App Badge -->
+							<!-- <div class="app-badge shake-hard">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a href='https://play.google.com/store/com.uprock.lfgalarm?utm_source=homepage&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="img-fluid" src="images/app-badge/google-play-badge.png" alt="Get it on Google Play"></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>
+									</li>
+								</ul>
+							</div>
+							<p class="text-white">iOS coming soon. <a href="#signup">Sign up for early updates.</a></p> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="d-none d-md-block image-block">
+						<img class="img-fluid" src="images/phones/lfg-banner-2.png" alt="LFG Alarm Screenshot and mascot">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="d-none  d-md-block d-lg-none content-block">
+						<h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter (ie price changes, tweets, NFT mints)<br/><br/><strong>Customize with memes and sounds as wild as crypto</strong><br/><br/>💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong></h3>
+						<h4 class="pink">BREAKING NEWS: Subscribe to the BitSignal LFG Alarm!</h4>
+						<!-- App Badge -->
+						<!-- <div class="app-badge">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href='https://play.google.com/store/com.uprock.lfgalarm?utm_source=homepage&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="img-fluid" src="images/app-badge/google-play-badge.png" alt="Get it on Google Play"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>
+								</li>
+							</ul>
+						</div>
+						<p class="text-white">iOS coming soon. <a href="#signup">Sign up for early updates.</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
+	<!--====  End of Homepage Banner  ====-->
+
+	<!--=================================
+	=            Bit Signal             =
+	==================================-->
+
+	<section class="section" id="bitsignal">
+		<div class="container">
+			<span class="section-title"><h2 class="text-gradient-pink-blue">BTC to $1mm - The Balaji Bet</h2></span>
+			<div class="row">
+				<div class="col-lg-8 align-self-center">
+					<div class="content">
+						<div class="title">
+							<span class="section-title"></span>
+							<h2 class="text-gradient-pink-purple">Subscribe to the Bit Signal Alarm</h2>
+							<h3><span class="bitsignal-deadline"></span> for BTC to reach $1mm</h3>
+							<p>Current ₿TC price: <span class="bitcoin-price"></span> USD</p>
+							<p>Total Subscribers: 100</p>
+						</div>
+						<p>Set Desktop Notification Alarm</p>
+						<div class="action-button">
+							<a href="" class="btn btn-main-rounded">Subscribe</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="image-block"><img class="img-fluid" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
+				</div>
+				<div class="col-lg-12">
+					<div class="description">
+						<h5>Alarm Type:</h4>
+						<p>Price</p>
+						<h5>Settings:</h5>
+						<p>Notify me when the price of <strong>BTC</strong> hits target price of <strong>$1,000,000 USD</strong></p>
+						<h5>Alarm Description: </h4>
+						<p>Balaji, the former CTO of Coinbase, has made an online bet that Bitcoin will reach a staggering value of $1 million USD in just <span class="bitsignal-deadline"></span> days. This bold prediction comes as a response to the Fed's massive money printing - trillions of dollars now - and a looming hyperinflation that may cause dozens of bank failures, the collapse of the US dollar, and a mass exodus to safer currencies. Born out of the 2008 crash, Bitcoin is designed for this very moment - a decentralized escape from centralized control, offering sound money that cannot be manipulated.
+						<br><br>
+						But let's face it, this is a huge bet. And if it comes true, it will trigger major world changes. So synchronize your watches. LFG Alarm is created for epic social events like this, where the community can set a collective alarm to track the price of Bitcoin together and rally behind it with the most epic memes and sounds you can imagine. Let's choose the ultimate LFG Alarm for the Bit Signal Bet, a rallying warcry, and be ready to face whatever challenges come our way. As Elon said, "he who controls the memes, controls the universe."</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+<script>
+// Set the target date (90 days after March 17th)
+const targetDate = new Date("June 15, 2023");
+
+// Get the current date
+const currentDate = new Date();
+
+// Calculate the difference in days between the target date and the current date
+const timeDiff = targetDate.getTime() - currentDate.getTime();
+const daysLeft = Math.floor(timeDiff / (1000 * 3600 * 24));
+
+// Update the HTML element with the result
+const deadlineElements = document.getElementsByClassName("bitsignal-deadline");
+for (let i = 0; i < deadlineElements.length; i++) {
+  deadlineElements[i].innerHTML = daysLeft + " days left";
+}
+
+</script>
+	<!--=================================
+	=            Why LFG Alarm          =
+	==================================-->
+
+
+	<section class="section alarms bg-primary" id="why">
+		<div class="shake-hard">
+			<div class="img-block">
+				<img class="img-fluid" src="images/icon.png" alt="LFG Alarm Icon">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2 class="text-gradient-pink-blue">Why LFG Alarm?</h2>
+						<p class="text-white">LFG Alarm is your crypto bat signal, calling you to action when shit gets real. It's not just another alert app adding to notification fatigue, but a rallying cry for your community. <br>Create your own custom meme + sound alarms, and rally your crew with shareable links. So whether you're at work, in bed or on a date, when <strong>LFG Alarm goes off, it's time to rally!</span> 🚀</strong></p>
+						<br/>
+						<p class="grey">Check out some examples.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 m-auto">
+				<!-- Alarm Carousel -->
+				<div class="alarm-slider">
+					<!-- Alarm item -->
+					<div class="alarm-item">
+						<div class="content">
+
+							<div class="video">
+								<video id="myvid" width="100%" height="auto" loop="loop" playsinline controls poster="images/alarms/alarm-preview.png">
+									<source src="videos/lfg-test-video.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="card m-auto row justify-content-center align-items-center">
+								<div class="card-header d-flex flex-row">
+									<div>
+										<img class="mr-2" src="./images/social-icon.svg" alt="Twitter icon" />
+									</div>
+									<div class="media-body">
+										<h4 class="card-title">Twitter Alarm</h4>
+										<p class="card-subtitle">@elonmusk just tweeted "tesla accepting bitcoin"</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Alarm item -->
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<!-- Alarm item -->
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+					<div class="alarm-item">
+						<div class="content">
+							<img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Why LFG Alarm ====-->
+
+	<!--=================================
+	=            Promo Video            =
+	==================================-->
+
+	<section class="section promo-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Promo Video -->
+					<div class="video">
+						<img class="img-fluid" src="images/backgrounds/promo-video-bg-2.jpg" alt="video-thumbnail">
+						<div class="video-button video-box">
+							<!-- Video Play Button -->
+							<a href="javascript:void(0)">
+								<span class="icon" data-video="https://www.youtube.com/embed/A0OJnX0kepA?autoplay=1">
+									<i class="fa-solid fa-circle-play"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Promo Video  ====-->
+
+	<!--===========================
+	=           Features          =
+	============================-->
+
+	<section class="features section" id="features">
+		<div class="container">
+			<span class="section-title"><h2 class="text-gradient-pink-blue">Three Alarm Types</h2></span>
+			<div class="row">
+				<div class="col-lg-5 mr-auto">
+					<div class="image-block">
+						<img src="images/phones/lfg-alarm-feature.png" alt="LFG Alarm Alarm feature screenshot" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-10 m-md-auto align-self-center ml-auto">
+					<div class="features-block">
+						<div class="features-item">
+							<div class="icon">
+								<img src="images/event-icon.svg" alt="LFG event icon">
+							</div>
+							<div class="content">
+								<h5 class="purple">Events</h5>
+								<p>Crypto never sleeps. Sometimes a NFT whitelist or a collection launches in the middle of the night. Why use a regular alarm app to stay on top? Our one-of-a-kind alarm app is designed to keep you on top of your game and make your mornings a little more fun. With our alarms being social, you can sync up with your entire community to take action at the same time.</p>
+							</div>
+						</div>
+						<div class="features-item active">
+							<div class="icon">
+								<img src="images/social-icon.svg" alt="LFG social icon">
+							</div>
+							<div class="content">
+								<h5 class="blue">Social</h5>
+								<p>Who said what!? Alpha can come from one tweet. Be the first to know when a particular word or phrase is mentioned on Twitter. With our powerful social alarm, you can track the tweets of your favorite influencers and any keywords of your choice. Be alerted in real-time when a significant social media event happens, whether it's Elon Musk tweeting about Tesla accepting Doge or Peter Schiff finally admitting to buying bitcoin.</p>
+							</div>
+						</div>
+						<div class="features-item">
+							<div class="icon">
+								<img src="images/price-icon.svg" alt="LFG price icon">
+							</div>
+							<div class="content">
+								<h5 class="pink">Price</h5>
+								<p>Many of us check prices daily, but sometimes you really need to take action if a token is going to the moon or going down in flames no matter what time it is. Set native mobile alarms for those crazy price action moments that demand your immediate attention more than mere notifications can offer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of features  ====-->
+
+	<!--=============================================
+	=            Call to Action Download            =
+	==============================================-->
+
+	<section class="cta-download bg-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="content-block">
+						<h2 class="text-gradient-pink-blue">How it Works</h2>
+						<p>Upgrade your super boring alarm clock app to super degen dope. Once installed:</p>
+						<p>1. Set the alarm trigger: event, social or price.</p>
+						<p>2. Choose from a gallery of AI and community-made memes.</p>
+						<p>3. Pick the perfect crypto sounds to wake you up with a bang</p>
+						<p><strong><span class="green">Epic alarm link created. Share with the peoples.</span></strong></p>
+						<!-- <div class="app-badge">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href='https://play.google.com/store/com.uprock.lfgalarm?utm_source=homepage&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="img-fluid" src="images/app-badge/google-play-badge.png" alt="Get it on Google Play"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>
+								</li>
+							</ul>
+						</div>
+						<p>iOS coming soon. <a href="#signup">Sign up for early updates.</a></p> -->
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="image-block"><img class="img-fluid" src="images/lfg-art-wall.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Call to Action Download  ====-->
+
+	<section class="section cta-subscribe" id="signup">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="image-block"><img class="img-fluid" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
+				</div>
+				<div class="col-lg-8 align-self-center">
+					<div class="content">
+						<div class="title">
+							<h2 class="text-gradient-pink-purple">Subscribe for Early Updates</h2>
+						</div>
+						<div class="description">
+							<p> Subscribe now to stay in the loop on LFG Alarm.  The team behind LFG Alarm is also building <a href="https://uprock.com" title="UpRock Site">UpRock.com</a>, a platform for creators to grow own their distribution, break free from centralized control and thrive in web3. LFG Alarm is one of many creator tools to come. <br/> We'd also love to hear your <a href="mailto:contact@lfgalarm.com" subject="LFG&nbsp;Alarm&nbsp;Feedback" title="Email LFG Alarm Team">feedback and questions</a>!</p>
+						</div>
+						<form action="#">
+							<div class="input-group">
+								<input type="text" class="form-control main" placeholder="Enter your email address">
+								<span class="input-group-addon" id="btnGroupAddon"><i class="fa-solid fa-paper-plane"></i></span>
+							</div>
+						</form>
+						<div class="subscription-tag text-sm-center text-md-right">
+							<p>Subscribe To Our Newsletter & Stay Updated</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--============================
+	=            Footer            =
+	=============================-->
 
 	<footer class="footer-main">
 		<div class="container">
@@ -123,6 +497,7 @@
 	<script src="js/custom.js"></script>
 	<script src="https://kit.fontawesome.com/afec55624d.js" crossorigin="anonymous"></script>
 
-</body>
+	</body>
 
-</html>
+	</html>
+
