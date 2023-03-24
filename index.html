@@ -79,15 +79,83 @@
 			<li class="nav-item">
 				<a class="nav-link scrollTo" href="#signup">Contact</a>
 			</li>
+            <li class="nav-item">
+				<a class="nav-link scrollTo" href="#login">Login</a>
+			</li>
 			</ul>
 		</div>
 	</div>
 </nav>
+
+	<!--=================================
+	=            Bit Signal             =
+	==================================-->
+
+	<section class="section banner bg-3" id="bitsignal">
+		<div class="container">
+			<div class="text-gradient-pink-blue section-title"><h1>BTC to $1mm</h1><br><h2>The BitSignal Bet</h2></div>
+			<div class="row">
+                <div class="col-lg-7 col-xl-6 align-self-center">
+                    <div class="alarm-content">
+                        <div class="content-block">
+                            <div class="title">
+                                <h2 class="text-gradient-pink-blue">Subscribe to the BitSignal Price Alarm Event </h2>
+                                <br> 
+                                <h3><span class="bitsignal-deadline"></span> Days for BTC to reach $1mm!</h3>
+                                <p>Current BTC price: <span class="bitcoin-price"></span> USD</p>
+                            </div>
+                        </div>
+                        <div class="description content-block">
+                            <br>
+                            <p class="text-white">
+                                <i class="fa-solid fa-bell"></i>  Type: <span class="green"><strong>Price Alarm</strong></span>
+                                <br>  <br> 
+                                <i class="fa-solid fa-bolt"></i>  Notify me when: <strong><span class="green">price of 1 BTC equals $1mm USD</span></strong>
+                                <br><br>
+                                <i class="fa-solid fa-music"></i>  Sound: <span class="green"><strong>soundfile.mp4</strong></span>
+                                <br><br> 
+                                <i class="fa-solid fa-image"></i>  Image: <span class="green"><strong>BTC to the Moon.jpg</strong></span>
+                                <br><br>
+                                <i class="fa-solid fa-users fa-sm"></i> <small>Total Subscribers: 100</small>
+                                <br>
+                            </p>
+                            <div class="action-button">
+                                <p><button class="btn btn-main-rounded subscribe-btn">SUBSCRIBE TO ALARM</button>                <button id="copy-btn" class="btn btn-primary"><i class="fa-solid fa-share-from-square"></i> Share</button></p>
+                            </div>
+                            <br>
+                            <br>   
+                            <p class="text-white"><i class="fa-solid fa-file-lines"></i> Description:</p>
+                            <p>Balaji, former CTO of Coinbase, made a bold online bet</a> - <a href="https://twitter.com/balajis/status/1636797265317867520?s=20">Bitcoin will hit <strong>$1M</strong> in just <strong><span class="bitsignal-deadline">82</span></strong> days</a>. Why? Blame the Fed's infinite money printing spree, looming hyperinflation, and the threat of bank collapses. Bitcoin was made for this moment, offering sound money that cannot be manipulated. 
+                            <br><br>
+                            But let's face it, this is a huge bet. And if it comes true, it will trigger major world changes. So let's synchronize our clocks and set the ultimate LFG Alarm for the BitSignal Bet. We'll track this historic moment together, and with epic memes and sounds of course. As Elon said, "he who controls the memes, controls the universe." So let's choose our rallying warcry and face whatever comes our way!</p><br>
+                            <p class="bitsignal-callout"> Share your LFG Alarm ideas on Twitter with the hashtags #LFGAlarm #BitSignal, and we'll add and shares the ones that get the most engagement!<br><br><a href="https://twitter.com/lfgalarm"><i class="fa-brands fa-twitter"></i> Go to LFG Alarm's Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                        </div>	
+                    </div>
+                </div>
+				<div class="col-lg-5 col-xl-6">
+
+                    <div class="bitsignal-slider">
+                        <div class="image-block"><img class="img-fluid m-auto" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
+                        <div class="image-block"><img class="img-fluid m-auto" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
+                        <div class="image-block"><img class="img-fluid m-auto" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
+                    </div>
+                    <br>
+                    <div class="col-sm-10 mx-auto meme-msg"><p class="text-white"><i class="fa-solid fa-lightbulb"></i> Got a better idea for the BitSignal Alarm?! Upload your audio + image meme to our <a href="twitter.com/lfgalarm">Twitter thread</a> or add the hashtags <strong>#lfgalarm</strong> and <strong>#bitsignal</strong> in your own tweet and we'll add and share the ones with the most engagement! LFG!</p><p><a href="https://twitter.com/lfgalarm"><i class="fa-brands fa-twitter"></i> Go to LFG Alarm's Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p></div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!--=====================================
 	=            Homepage Banner            =
 	======================================-->
 
-	<section class="banner bg-1" id="home">
+	<section class="section  bg-1" id="home">
+        <div class="img-block">
+            <img class="img-fluid shake-hard" src="images/icon.png" alt="LFG Alarm Icon">
+        </div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 align-self-center">
@@ -96,12 +164,22 @@
 						<h1 class="text-gradient-pink-blue">LFG Alarm</h1>
 						<h2 class="text-gradient-green">The crypto alarm clock app for degens. Wake up to real time crypto events that you cannot afford to miss. <u>Use sparingly.</u></h2>
 						<div class="d-md-none d-lg-block">
-							<h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter (ie price changes, words in a tweets, NFT mints) <br/><br/><strong>Customize your alarms with memes and sounds as wild as crypto</strong><br/><br/>💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong></h3>
+                            <h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter, such as:</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-chart-line green"></i> crypto price changes</li>
+                                    <li><i class="fa-brands fa-twitter blue"></i> tweets that match keywords, hashtags or phrases</li>
+                                    <li><i class="fa-regular fa-calendar pink"></i> IRL events like mint days & airdrops</li>
+                                </ul>
+                            <h3><i class="fa-solid fa-music pink"></i> + <i class="fa-solid fa-image blue"></i> <strong> Customize your alarms with memes and sounds as wild as crypto</strong>
+                            <br/><br/>
+                            💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong>
+                            </h3>   
 							<br>
-							<div class="bitsignal-notice">
-								<h4 class="pink">BREAKING:<br>BTC to hit $1mm in 90 days?!<br><br><i class="fa-solid fa-arrow-down fa"></i> Subscribe to the BitSignal LFG Alarm! </h4>
-							</div>
-							<script src="js/price-test.js"></script>
+                            <div class="action-button">
+                                <a href="https://uprock.com" class="btn btn-main-rounded green-bg">Get early access through UpRock*</a>
+                            </div>
+                            <br>
+                            <p class="grey"><small>*Join the early adopter program</small></p>		
 							<!-- App Badge -->
 							<!-- <div class="app-badge shake-hard">
 								<ul class="list-inline">
@@ -123,9 +201,18 @@
 					</div>
 				</div>
 				<div class="col-sm-12">
-					<div class="d-none  d-md-block d-lg-none content-block">
-						<h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter (ie price changes, tweets, NFT mints)<br/><br/><strong>Customize with memes and sounds as wild as crypto</strong><br/><br/>💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong></h3>
-						<h4 class="pink">BREAKING NEWS: Subscribe to the BitSignal LFG Alarm!</h4>
+					<div class="d-none d-md-block d-lg-none content-block">
+                        <h3>🔥 Ditch the daily distractions of ordinary notifications and set alarms that matter, such as:</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-chart-line green"></i> crypto price changes</li>
+                            <li><i class="fa-brands fa-twitter blue"></i> tweets that match keywords, hashtags or phrases</li>
+                            <li><i class="fa-regular fa-calendar pink"></i> IRL events like mint days & airdrops</li>
+                        </ul>
+                        <h3><i class="fa-solid fa-music pink"></i> + <i class="fa-solid fa-image blue"></i> <strong> Customize your alarms with memes and sounds as wild as crypto</strong>
+                        <br/><br/>
+                        💪 Rally your squad with shareable links and wake up to the same crypto war cry. <strong>LFG!</strong>
+                        </h3>  
+                        <br>
 						<!-- App Badge -->
 						<!-- <div class="app-badge">
 							<ul class="list-inline">
@@ -147,97 +234,31 @@
 	<!--====  End of Homepage Banner  ====-->
 
 	<!--=================================
-	=            Bit Signal             =
-	==================================-->
-
-	<section class="section" id="bitsignal">
-		<div class="container">
-			<span class="section-title"><h2 class="text-gradient-pink-blue">BTC to $1mm - The Balaji Bet</h2></span>
-			<div class="row">
-				<div class="col-lg-8 align-self-center">
-					<div class="content">
-						<div class="title">
-							<span class="section-title"></span>
-							<h2 class="text-gradient-pink-purple">Subscribe to the BitSignal Price Alarm Event</h2>
-							<h3><span class="bitsignal-deadline"></span> for BTC to reach $1mm</h3>
-                            <br>
-							<p>Current ₿TC price: <span class="bitcoin-price"></span> USD</p>
-						</div>
-						<p><strong>Set Desktop Notification Alarm:</strong><br>Total Subscribers: 100</p>
-						<div class="action-button">
-							<a href="" class="btn btn-main-rounded">Subscribe</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="image-block"><img class="img-fluid" src="images/phones/lfg-alarm-preview.png" alt="LFG Alarm Homescreen"></div>
-                    <p></P>
-				</div>
-				<div class="col-lg-12">
-					<div class="description">
-						<h4>Type:</h4>
-						<p class="green"><strong>Price Alarm</strong></p>
-						<h4>Trigger:</h4>
-						<p>Notify me when the price of <strong><span class="green"><u>BTC</u></span></strong> hits target price of <strong><span class="green"><u>$1,000,000 USD</u></span></strong>.</p>
-						<h4>Notes: </h4>
-						<p>Balaji, the former CTO of Coinbase, has made an online bet that Bitcoin will reach a staggering value of <strong>$1 million USD</strong> in just <strong><span class="bitsignal-deadline"></span></strong> days. This bold prediction comes as a response to the Fed's massive money printing - trillions of dollars now - and a looming hyperinflation that may cause dozens of bank failures, the collapse of the US dollar, and a mass exodus to safer currencies. Born out of the 2008 crash, Bitcoin is designed for this very moment - a decentralized escape from centralized control, offering sound money that cannot be manipulated.
-						<br><br>
-						But let's face it, this is a huge bet. And if it comes true, it will trigger major world changes. So synchronize your watches. LFG Alarm is created for epic social events like this, where the community can set a collective alarm to track the price of Bitcoin together and rally behind it with the most epic memes and sounds you can imagine. Let's choose the ultimate LFG Alarm for the Bit Signal Bet - a rallying warcry, and be ready to face whatever challenges come our way. As Elon said, "he who controls the memes, controls the universe."</p>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- <script>
-// Set the target date (90 days after March 17th)
-const targetDate = new Date("June 15, 2023");
-
-// Get the current date
-const currentDate = new Date();
-
-// Calculate the difference in days between the target date and the current date
-const timeDiff = targetDate.getTime() - currentDate.getTime();
-const daysLeft = Math.floor(timeDiff / (1000 * 3600 * 24));
-
-// Update the HTML element with the result
-const deadlineElements = document.getElementsByClassName("bitsignal-deadline");
-for (let i = 0; i < deadlineElements.length; i++) {
-  deadlineElements[i].innerHTML = daysLeft + " days left";
-}
-
-</script> -->
-	<!--=================================
 	=            Why LFG Alarm          =
 	==================================-->
 
-
 	<section class="section alarms bg-primary" id="why">
-		<div class="shake-hard">
-			<div class="img-block">
-				<img class="img-fluid" src="images/icon.png" alt="LFG Alarm Icon">
-			</div>
-		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="section-title">
 						<h2 class="text-gradient-pink-blue">Why LFG Alarm?</h2>
-						<p class="text-white">LFG Alarm is your crypto bat signal, calling you to action when shit gets real. It's not just another alert app adding to notification fatigue, but a rallying cry for your community. <br>Create your own custom meme + sound alarms, and rally your crew with shareable links. So whether you're at work, in bed or on a date, when <strong>LFG Alarm goes off, it's time to rally!</span> 🚀</strong></p>
+						<p class="text-white">LFG Alarm is your crypto bat signal, calling you to action when shit gets real. It's not just another alert app adding to notification fatigue, but a rallying cry for your community. <br>Create your own custom meme + sound alarms, and rally your crew with shareable links. Whether you're on a hot date, sleeping like a baby, or grinding away, when <br><strong>LFG Alarm goes off, it's time to suit up and rally!</span></strong></p>
 						<br/>
-						<p class="grey">Check out some examples.</p>
+						<h3 class="blue">Check out some examples</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12 m-auto">
+		<div class="row p-0 m-0">
+			<div class="col-12 m-0 p-0">
 				<!-- Alarm Carousel -->
 				<div class="alarm-slider">
 					<!-- Alarm item -->
 					<div class="alarm-item">
 						<div class="content">
-
-							<div class="video">
+                            <img class="img-fluid" src="images/alarms/alarm-preview.png" alt="LFG Alarm example">
+							<!-- <div class="video">
 								<video id="myvid" width="100%" height="auto" loop="loop" playsinline controls poster="images/alarms/alarm-preview.png">
 									<source src="videos/lfg-test-video.mp4" type="video/mp4">
 								</video>
@@ -252,7 +273,7 @@ for (let i = 0; i < deadlineElements.length; i++) {
 										<p class="card-subtitle">@elonmusk just tweeted "tesla accepting bitcoin"</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- Alarm item -->
@@ -306,32 +327,21 @@ for (let i = 0; i < deadlineElements.length; i++) {
 
     
 	<section class="section promo-video">
-		<div class="container">
-			<div class="row">
+		<div class="container p-0">
+			<div class="row no-gutters">
 				<div class="col-12">
-					<!-- Promo Video -->
-
-                    <!-- <div class="video-container">
-                        <div class="play-button"></div>
-                        <img class="placeholder-image" src="images/backgrounds/promo-video-bg-2.jpg" alt="Video Placeholder">
-                        <iframe class="youtube-video" src="https://www.youtube.com/embed/A0OJnX0kepA" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-                      </div> -->
-                      
+					<!-- Promo Video -->                   
                       <div class="video-wrapper">
                         <img class="video-placeholder" src="images/backgrounds/promo-video-bg-2.jpg" alt="Video Placeholder">
                         <div class="play-button"></div>
                         <iframe class="video-embed" src="https://www.youtube.com/embed/A0OJnX0kepA" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-                      </div>
-                      
-                      
-                      
-                      
+                      </div>        
 			    </div>
 			</div>
 		</div>
 	</section>
 
-	<!--====  End of Promo Video  ====-->
+	<!--=  End of Promo Video  =-->
 
 	<!--===========================
 	=           Features          =
@@ -354,7 +364,7 @@ for (let i = 0; i < deadlineElements.length; i++) {
 							</div>
 							<div class="content">
 								<h5 class="purple">Events</h5>
-								<p>Crypto never sleeps. Sometimes a NFT whitelist or a collection launches in the middle of the night. Why use a regular alarm app to stay on top? Our one-of-a-kind alarm app is designed to keep you on top of your game and make your mornings a little more fun. With our alarms being social, you can sync up with your entire community to take action at the same time.</p>
+								<p>Crypto never sleeps. Sometimes an NFT whitelist or a collection launches in the middle of the night. Why use a regular alarm app to stay on top? Our one-of-a-kind alarm app is designed to keep you on top of your game and make your mornings a little more fun. With our alarms being social, you can sync up with your entire community to take action at the same time.</p>
 							</div>
 						</div>
 						<div class="features-item active">
@@ -363,7 +373,7 @@ for (let i = 0; i < deadlineElements.length; i++) {
 							</div>
 							<div class="content">
 								<h5 class="blue">Social</h5>
-								<p>Who said what!? Alpha can come from one tweet. Be the first to know when a particular word or phrase is mentioned on Twitter. With our powerful social alarm, you can track the tweets of your favorite influencers and any keywords of your choice. Be alerted in real-time when a significant social media event happens, whether it's Elon Musk tweeting about Tesla accepting Doge or Peter Schiff finally admitting to buying bitcoin.</p>
+								<p>Who said what!? Alpha can come from one tweet. Be the first to know when a particular word or phrase is mentioned on Twitter. With our powerful social alarm, you can track the tweets of your favorite influencers and any keywords, phrases of your choice. Be alerted in real-time when a significant social media event happens, whether it's Elon Musk tweeting about Tesla accepting Doge or Peter Schiff finally admitting to buying bitcoin.</p>
 							</div>
 						</div>
 						<div class="features-item">
@@ -432,9 +442,14 @@ for (let i = 0; i < deadlineElements.length; i++) {
 							<h2 class="text-gradient-pink-purple">Subscribe for Early Updates</h2>
 						</div>
 						<div class="description">
-							<p> Subscribe now to stay in the loop on LFG Alarm.  The team behind LFG Alarm is also building <a href="https://uprock.com" title="UpRock Site">UpRock.com</a>, a platform for creators to grow own their distribution, break free from centralized control and thrive in web3. LFG Alarm is one of many creator tools to come. <br/> We'd also love to hear your <a href="mailto:contact@lfgalarm.com" subject="LFG&nbsp;Alarm&nbsp;Feedback" title="Email LFG Alarm Team">feedback and questions</a>!</p>
+							<p> Subscribe now to stay in the loop on LFG Alarm.  The team behind LFG Alarm is also building <a href="https://uprock.com" title="UpRock Site">UpRock.com</a>, a platform for creators to grow own their distribution, break free from centralized control and thrive in web3. LFG Alarm is one of many creator tools to come to the UpRock Platform. <br/> We'd also love to hear your <a href="mailto:contact@lfgalarm.com" subject="LFG&nbsp;Alarm&nbsp;Feedback" title="Email LFG Alarm Team">feedback and questions</a>!</p>
 						</div>
-						<form action="#">
+                        <div class="action-button">
+                            <a href="https://uprock.com" class="btn btn-main-rounded green-bg">Get early access through UpRock*</a>
+                        </div>	
+                        <br>
+                        <p class="grey"><small>*Join the early adopter program</small></p>
+						<!-- <form action="#">
 							<div class="input-group">
 								<input type="text" class="form-control main" placeholder="Enter your email address">
 								<span class="input-group-addon" id="btnGroupAddon"><i class="fa-solid fa-paper-plane"></i></span>
@@ -442,7 +457,7 @@ for (let i = 0; i < deadlineElements.length; i++) {
 						</form>
 						<div class="subscription-tag text-sm-center text-md-right">
 							<p>Subscribe To Our Newsletter & Stay Updated</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -504,6 +519,7 @@ for (let i = 0; i < deadlineElements.length; i++) {
 	<script src="plugins/slick/slick.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="https://kit.fontawesome.com/afec55624d.js" crossorigin="anonymous"></script>
+    <script src="js/price-test.js"></script>
 
 	</body>
 
