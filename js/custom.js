@@ -60,14 +60,25 @@
               }
             ]
          });
-        // -----------------------------
-        //  Video Replace
-        // -----------------------------
-        $('.video-box span.icon').click(function() {
-            var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
-            $(this).replaceWith(video);
-        });
+         
+         const targetDate = new Date("June 15, 2023");
 
+         // Get the current date
+         const currentDate = new Date();
+         
+         // Calculate the difference in days between the target date and the current date
+         const timeDiff = targetDate.getTime() - currentDate.getTime();
+         const daysLeft = Math.floor(timeDiff / (1000 * 3600 * 24));
+         
+         // Update the HTML element with the result
+         $('.bitsignal-deadline').html(daysLeft + " days left");
+         
+
+         $('.video-wrapper').click(function() {
+          $(this).find('.play-button, .video-placeholder').fadeOut(500);
+          $(this).find('.video-embed').fadeIn(500).attr('src', $(this).find('.video-embed').attr('src') + '?autoplay=1').css('z-index', '0');
+        });
+        
     });
 
 
