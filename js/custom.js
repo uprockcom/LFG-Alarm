@@ -217,3 +217,31 @@ subscribeButton.addEventListener('click', () => {
 
   updateSubscriberCount();
 });
+
+
+
+// server TODO
+
+// const express = require('express');
+// const app = express();
+// const bodyParser = require('body-parser');
+
+// let subscriberCount = 0;
+
+// app.use(bodyParser.urlencoded({ extended: true }));
+
+// app.post('/subscribe', (req, res) => {
+//   const isSubscribed = req.body.subscribed === 'true';
+
+//   if (isSubscribed) {
+//     subscriberCount++;
+//   } else {
+//     subscriberCount--;
+//   }
+
+//   res.send({ count: subscriberCount });
+// });
+
+// app.listen(3000, () => {
+//   console.log('Server is listening on port 3000');
+// });

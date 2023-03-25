@@ -464,28 +464,6 @@ a:focus, a:hover {
   text-align: center;
 }
 
-.alarms .content .card {
-  position:absolute;
-  width:90%;
-  left:5%;
-  bottom:0;
-  background-color: initial;
-  border:none;
-  height:80% !important;
-  top:0;
-}
-
-.card-header {
-  background: #fff;
-  border-bottom: none;
-  position: relative;
-}
-
-.card-header {
-  background: #fff;
-  border-bottom:none;
-}
-
 .alarms .content {
   position:relative;
 }
