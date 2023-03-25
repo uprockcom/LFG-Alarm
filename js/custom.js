@@ -115,8 +115,105 @@
             $(this).remove();
           });
         });
+
+        
         
     });
 
 
 })(jQuery);
+
+$(document).ready(function() {
+	// check if the user is already subscribed
+	var isSubscribed = getCookie('isSubscribed');
+
+	if (isSubscribed == 'true') {
+		// change the button text to "Unsubscribe"
+		$('#subscribeButton').text('Unsubscribe');
+	} else {
+		// change the button text to "Subscribe"
+		$('#subscribeButton').text('Subscribe');
+	}
+
+	// handle button click event
+	$('#subscribeButton').click(function() {
+		if (isSubscribed == 'true') {
+			// unsubscribe the user
+			setCookie('isSubscribed', 'false', 365);
+			$('#subscribeButton').text('Subscribe');
+			alert('You have unsubscribed from Bitcoin price alerts.');
+		} else {
+			// subscribe the user
+			setCookie('isSubscribed', 'true', 365);
+			$('#subscribeButton').text('Unsubscribe');
+			alert('You have subscribed to Bitcoin price alerts.');
+
+			// check the price of Bitcoin every 30 seconds
+			setInterval(function() {
+				$.getJSON('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd', function(data) {
+					var price = data.bitcoin.usd;
+					if (price >= 1000000) {
+						// play the custom notification sound
+						var audio = new Audio('notification-sound.mp3');
+						audio.play();
+
+						// show the notification
+						var notification = new Notification('Bitcoin Price Alert', {
+							body: 'Bitcoin price has reached $1,000,000!'
+						});
+					}
+				});
+			}, 30000); // 30 seconds
+		}
+	});
+});
+
+// set a cookie
+function setCookie(name, value, days) {
+	var expires = '';
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		expires = '; expires=' + date.toUTCString();
+	}
+	document.cookie = name + '=' + (value || '') + expires + '; path=/';
+}
+
+// get a cookie
+function getCookie(name) {
+	var nameEQ = name + '=';
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+
+const subscribeButton = document.getElementById('subscribe-button');
+const countDisplay = document.getElementById('count-display');
+let isSubscribed = false;
+
+function updateSubscriberCount() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/subscribe', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = () => {
+    const response = JSON.parse(xhr.responseText);
+    countDisplay.innerHTML = response.count;
+  };
+  xhr.send(`subscribed=${isSubscribed}`);
+}
+
+subscribeButton.addEventListener('click', () => {
+  isSubscribed = !isSubscribed;
+
+  if (isSubscribed) {
+    subscribeButton.textContent = 'Unsubscribe';
+  } else {
+    subscribeButton.textContent = 'Subscribe';
+  }
+
+  updateSubscriberCount();
+});

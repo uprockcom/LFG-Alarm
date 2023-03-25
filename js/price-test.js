@@ -34,4 +34,6 @@ async function getCurrentPrice() {
   
   // Check and update displayed bitcoin price every minute
   setInterval(checkAndUpdatePrice, 60000);
+
+  
   
