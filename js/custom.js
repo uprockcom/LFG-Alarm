@@ -22,6 +22,7 @@
                scrollTop: ($(target).offset().top)
              }, 500);
           });
+          
         // -----------------------------
         //  Alarms Slider
         // -----------------------------
@@ -55,7 +56,15 @@
                 settings: {
                     arrows:false,
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                    arrows:false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
               }
             ]
@@ -68,6 +77,32 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                  arrows:false,
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+            }
+          ]
          });
          
          const targetDate = new Date("June 15, 2023");

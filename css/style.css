@@ -136,35 +136,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-family: var(--body-altfont-family);
 }
 
 h3 {
-  font-size: 30px;
-  font-family: var(--body-altfont-family);
-}
-
-h4 {
   font-size: 28px;
   font-family: var(--body-altfont-family);
 }
 
+h4 {
+  font-size: 24px;
+  font-family: var(--body-altfont-family);
+}
+
 h5 {
-  font-size: 26px;
+  font-size: 20px;
   font-family: var(--body-altfont-family);
 }
 
 h6 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p, li, blockquote, label {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 22px;
   color:#1B1B3A;
@@ -175,7 +175,7 @@ a {
 }
 
 p {
-  line-height: 30px;
+  line-height: 32px;
 }
 
 cite {
@@ -274,10 +274,6 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
-#home h4 {
-  font-family:var(--body-font-family);
-}
-
 .bg-1 {
   background: url(../images/backgrounds/banner-bg-2.jpg) fixed no-repeat center;
   background-size: cover;
@@ -301,12 +297,11 @@ a:focus, a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 85px;
+  text-align: left;
 }
 
 .section-title h2 {
@@ -318,7 +313,6 @@ a:focus, a:hover {
 }
 
 .section-title p {
-  width: 70%;
   margin: 0 auto;
   font-size: 20px;
   line-height: 30px;
@@ -506,6 +500,7 @@ a:focus, a:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   z-index: 9999;
 }
+
 #copy-btn {
   position:relative;
 }
@@ -771,16 +766,6 @@ a:focus, a:hover {
   outline: none;
 }
 
-.large {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.small {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .footer-main {
   padding: 50px 0;
   background: #1B1B3A;
@@ -874,6 +859,7 @@ a:focus, a:hover {
     margin-bottom: 30px;
     text-align: center;
   }
+
 }
 
 .cta-subscribe {
@@ -881,12 +867,6 @@ a:focus, a:hover {
 }
 .cta-subscribe .content {
   margin-left: 25px;
-}
-
-@media (max-width: 768px) {
-  .cta-subscribe .content {
-    text-align: center;
-  }
 }
 
 .cta-subscribe .content .title {
@@ -910,6 +890,10 @@ a:focus, a:hover {
 .cta-subscribe .content .subscription-tag p {
   color: #1B1B3A;
   letter-spacing: .1em;
+}
+
+#home h4 {
+  font-family:var(--body-font-family);
 }
 
 #home {
@@ -975,7 +959,7 @@ a:focus, a:hover {
 
 
 .alarm-slider {
-  width:80%;
+  width:85%;
   margin:auto;
 }
 
@@ -986,7 +970,7 @@ a:focus, a:hover {
 }
 
 .bitsignal-slider {
-  width:80%;
+  width:85%;
   margin:auto;
 }
 
@@ -999,10 +983,10 @@ a:focus, a:hover {
 @media (max-width: 768px) {
 
   .alarm-slider {
-    width:100%;
+    width:85%;
   }
   .bitsignal-slider {
-    width:100%;
+    width:85%;
   }
 }
 
@@ -1160,9 +1144,21 @@ a:focus, a:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .banner .content-block.ml-50 {
     margin-left: 0;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  #bitsignal .alarm-content {
+    padding: 30px 10px;
+  }
+  .section-title {
+    margin-bottom: 25px;
+  }
+  .cta-download .content-block {
+    text-align:left;
   }
 }
 
@@ -1181,7 +1177,7 @@ a:focus, a:hover {
   color: #fff;
 }
 #home .content-block li {
-  line-height: 50px;
+  line-height: 40px;
   font-size: 22px;
   list-style-type: none;
 }
@@ -1209,14 +1205,15 @@ a:focus, a:hover {
 
 @media (max-width: 480px) {
   .banner .content-block {
-    text-align: center;
+    text-align: left;
   }
-}
 
-@media (max-width: 480px) {
   .banner .image-block {
     margin-top: 30px;
     text-align: center;
+  }
+  .section-title {
+    text-align: left;
   }
 }
 
@@ -1291,7 +1288,7 @@ a:focus, a:hover {
 @media (max-width: 992px) {
 
   .cta-download .content-block {
-    text-align:center;
+    text-align:left;
   }
 
   .cta-download .image-block {
@@ -1327,7 +1324,7 @@ a:focus, a:hover {
 
 @media (max-width: 480px) {
   .features .content {
-    text-align: center;
+    text-align: left;
   }
 }
 
