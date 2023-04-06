@@ -201,6 +201,19 @@ $(document).ready(function() {
 			}, 30000); // 30 seconds
 		}
 	});
+
+  // Total Subscribers
+  $.ajax({
+    url: 'http://api.lfgalarm.com/count_subscribe',
+    method: 'GET',
+    contentType: "application/json",
+    dataType: "json",
+    success: function(response){
+      console.log(response);
+      $('#total-subscribers').html(response.count);
+    }
+  });
+
 });
 
 // set a cookie
